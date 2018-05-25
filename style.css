@@ -1,0 +1,106 @@
+/*#container
+{
+    width: 80%;
+    height: 450px;
+    border: 1px solid red;
+    margin: 0 auto;
+}*/
+/* Spinner 1*/
+.spinner-1:before
+{
+    content: "";
+    box-sizing:border-box;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    height: 60px;
+    width:60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    border-top-color: coral;
+    animation: spinner 0.7s linear infinite;
+    
+}
+/* Spinner 2*/
+.spinner-2:before
+{
+    content: "";
+    box-sizing:border-box;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    height: 50px;
+    width:50px;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: coral;
+    border-bottom-color: coral;
+    animation: spinner 0.7s ease infinite;
+    
+}
+/* Spinner 3*/
+.spinner-3:before
+{
+    content: "";
+    box-sizing:border-box;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    height: 60px;
+    width:60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    border-radius: 50%;
+    border-top: 2px solid coral;
+    border-right:2px solid transparent;
+    animation: spinner 0.7s linear infinite;
+    
+}
+
+
+@keyframes spinner{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.mustache
+{
+    width: 180px;
+    height: 180px;
+    left: 100px;
+    border-radius: 50%;
+    position: absolute;
+    color: black;
+    box-shadow: 150px 240px 0 0 currentColor,
+                300px 240px 0 0 currentColor;
+}
+.mustache::before
+{
+    width: 210px;
+    height: 120px;
+    left:30px;
+    top:120px;
+    content: '';
+    position:absolute;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 100%;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;
+}
+.mustache::after
+{
+    width: 210px;
+    height: 120px;
+    left:390px;
+    top:120px;
+    content: '';
+    position:absolute;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 100% 0;
+    transform: rotate(40deg);
+    transform-origin: left 210px;
+}

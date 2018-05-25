@@ -1,0 +1,34 @@
+<!doctype html>
+<!--<html>
+    <head>
+        <title>Javascript Slideshow</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            
+        </div>
+    </body>
+</html> -->
+<html>
+    <head>
+        <title>css Spinners</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+       <div class="main">
+        <h1>Hello,Welcome to my website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio vitae, ut natus earum, sed illo nihil! Laborum quam sequi officia blanditiis voluptates eum aperiam molestiae possimus quod cum vel ad quasi, error adipisci, nulla magnam quae labore dolor quo sed dicta amet facilis distinctio velit tempore? Mollitia rerum earum ab.</p>
+        </div>
+        
+        <script>
+            document.querySelector('.main p').style.display='none';
+            document.querySelector('.main').classList.add('spinner-2');
+            //mimic server request
+            setTimeout(()=>{
+                document.querySelector('.main p').style.display='block';
+            document.querySelector('.main').classList.remove('spinner-2');
+            },4000);
+        </script>
+    </body>
+</html>
